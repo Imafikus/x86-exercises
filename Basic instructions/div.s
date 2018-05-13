@@ -9,11 +9,14 @@
 div:
 
     enter 0, 0
-
+/*
     mov eax, edi
-    cdq
+    cdq // fills with sign
     idiv esi
-
+*/
+    mov eax, edi
+    cqo // fils with zeros
+    div esi
     leave
     ret
     
