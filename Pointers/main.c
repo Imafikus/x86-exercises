@@ -3,16 +3,19 @@
 
 unsigned savrsen_stepen(unsigned n, unsigned *m, unsigned *k);
 unsigned izbaci_neparne(long* niz, unsigned* duzina);
+void kol_ost(unsigned, unsigned, unsigned*, unsigned*);
 void swap(int*, int*);
 
 int main()
 {
-    int a = 3;
-    int b = 9;
+   unsigned a, b;
+   unsigned kol, ost;
 
-    printf("a = %d  b = %d\n", a, b);
-    swap(&a, &b);
+   scanf("%u%u", &a, &b);
 
-    printf("a = %d  b = %d\n", a, b);
+   kol_ost(a, b, &kol, &ost);
+
+   printf("Kolicnik je: %u\nOstatak je: %u\n", kol, ost);
+
    
 }
