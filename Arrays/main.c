@@ -2,6 +2,7 @@
 #include <stdio.h>
 
 int suma(int[], int);
+int max(int[], int);
 
 int main()
 {
@@ -17,8 +18,8 @@ int main()
     }
 
 
-    int s = suma(a, n);
-    printf("Suma elemenata je: %d\n", s);
+    int m = max(a, n);
+    printf("Max element je: %d\n", m);
 
 /*
     for(i = 0; i < n; i++)
